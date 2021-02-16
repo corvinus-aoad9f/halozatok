@@ -22,9 +22,13 @@ namespace HajosTeszt
             }
 
             app.UseHttpsRedirection();
-
-            app.UseDefaultFiles();
-            app.UseStaticFiles(); //A sorrend fontos!
+            DefaultFilesOptions options = new DefaultFilesOptions();
+            options.DefaultFileNames.Clear();
+            options.DefaultFileNames.Add("cv.html");
+            app.UseDefaultFiles(options);
+            app.UseStaticFiles();
+            //app.UseDefaultFiles();
+            //app.UseStaticFiles(); //A sorrend fontos!
 
             app.UseRouting();
 
