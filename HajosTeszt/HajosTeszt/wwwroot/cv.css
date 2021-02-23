@@ -1,0 +1,46 @@
+﻿div{
+    margin: 8px;
+    padding: 21px;
+    border: 2px dotted fuchsia;
+    border-radius: 21px;
+}
+h1,h2{
+    text-align:center;
+}
+a{
+    padding: 8px;
+    border-radius:20px;
+    background-color:blue;
+    color:white;
+}
+    a:hover {
+        background-color: fuchsia;
+        color: rgb(49, 49, 49);
+    }
+span{
+    font-weight: bold;
+    font-style:italic;
+    color:fuchsia;
+    font-size:38px;
+}
+#listak{
+    background-color:lightgrey;
+}
+.megisfeher {
+    
+    background-image: url("https://mypersiancat.com/wp-content/uploads/2020/10/pexels-peng-louis-3073694.jpg");
+    width: 200px;
+    color:fuchsia;
+    border-radius: 24px;
+    border: 1px dashed fuchsia;
+}
+.sorrendi{
+    font-style:italic;
+}
+img{
+    display:block;
+    margin:auto;
+}
+.jonagy{
+    width: 300px;
+}
