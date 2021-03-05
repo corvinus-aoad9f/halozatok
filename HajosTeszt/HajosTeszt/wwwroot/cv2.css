@@ -45,14 +45,17 @@ span {
 
 #listak {
     background-color: lightgrey;
+    text-align: center;
 }
 
 .megisfeher {
-    background-image: url("https://mypersiancat.com/wp-content/uploads/2020/10/pexels-peng-louis-3073694.jpg");
-    width: 200px;
+    background-image: url("https://i.imgur.com/ecYdPKW.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: fuchsia;
     border-radius: 24px;
     border: 1px dashed fuchsia;
+    text-align: center;
 }
 
 .sorrendi {
