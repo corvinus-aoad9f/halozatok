@@ -24,7 +24,7 @@ div {
     background-color: cadetblue;
     color: white;
     padding-left: 15px;
-    paddig-right: 15px;
+    padding-right: 15px;
 }
 
 #középső {
@@ -65,9 +65,16 @@ div {
     background-color:cadetblue;
     color: white;
     padding-left: 15px;
-    paddig-right: 15px;
+    padding-right: 15px;
 }
 .kattintható:hover {
     background-color: rgb(214, 167, 20);
     color: white;
+}
+.jo {
+    background-color: green;
+}
+
+.rossz {
+    background-color: red;
 }
