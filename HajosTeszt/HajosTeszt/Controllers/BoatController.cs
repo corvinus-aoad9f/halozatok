@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using HajosTeszt.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,20 +12,22 @@ namespace HajosTeszt.Controllers
     [ApiController]
     public class BoatController : ControllerBase
     {
-        /*[HttpGet]
+        [HttpGet]
         [Route("questions/all")]
         public ActionResult M1()
         {
-            Models.HajostesztContext context = new Models.HajostesztContext();
+            HajostesztContext context = new HajostesztContext();
             var kérdések = from x in context.Questions select x.QuestionText;
 
             return new JsonResult(kérdések);
-        }*/
+        }
+
+
         [HttpGet]
         [Route("questions/{sorszám}")]
         public ActionResult M2(int sorszám)
         {
-            Models.HajostesztContext context = new Models.HajostesztContext();
+            HajostesztContext context = new HajostesztContext();
             var kérdés = (from x in context.Questions
                           where x.QuestionId == sorszám
                           select x).FirstOrDefault();
@@ -33,6 +36,15 @@ namespace HajosTeszt.Controllers
 
             return new JsonResult(kérdés);
         }
-    }
+        [HttpGet]
+        [Route("questions/count")]
+        public int M4()
+        {
+            HajostesztContext context = new HajostesztContext();
+            int kérdésekSzáma = context.Questions.Count();
 
+            return kérdésekSzáma;
+        }
+
+    }
 }
