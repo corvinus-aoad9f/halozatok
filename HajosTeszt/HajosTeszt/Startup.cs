@@ -29,7 +29,7 @@ namespace HajosTeszt
             app.UseHttpsRedirection();
             DefaultFilesOptions options = new DefaultFilesOptions();
             options.DefaultFileNames.Clear();
-            options.DefaultFileNames.Add("hajo.html");
+            options.DefaultFileNames.Add("jokes.html");
             app.UseDefaultFiles(options);
             app.UseStaticFiles();
             //app.UseDefaultFiles();
